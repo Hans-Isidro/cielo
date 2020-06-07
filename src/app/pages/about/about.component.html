@@ -1,0 +1,66 @@
+
+<!-- =========================
+     START TESTIMONIAL SECTION
+     ============================== -->
+
+     <section id="TESTIMONIAL" class="testimonial parallax">
+        <div class="section_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow bounceInDown">
+                        <div id="carousel-example-caption-testimonial" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-caption-testimonial" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-caption-testimonial" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-caption-testimonial" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <!-- IMAGE -->
+                                                <img src="assets/images/client_1.png" alt="">
+                                                <div class="testimonial_caption">
+                                                 <!-- DESCRIPTION -->  
+                                                 <h2>Hans</h2>
+                                                 <h4> Ingeniero</h4>
+                                                 <p>“No hay arte ni ciencia que no sea despreciada y menospreciada por la
+                                                    ignorancia y los ignorantes. ¿Por qué, pues, la filosofía ha de ser una excepción
+                                                    haciéndoles caso y dejándose conmover por sus prejuicios y reproches?”</p>
+                                                </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div *ngFor="let persona of infoSercice.equipo" class="item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                           <!-- IMAGE -->
+                                           <img src="{{persona.url}}" alt="">
+                                           <div class="testimonial_caption">
+                                            <!-- DESCRIPTION --> 
+                                            <h2>{{persona.nombre}}</h2>
+                                            <h4>  {{persona.carrera}}</h4>
+                                            <p>“{{persona.contenido}}”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<!-- END TESTIMONIAL SECTION -->
